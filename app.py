@@ -28,7 +28,7 @@ def load_user(user_id):
 with app.app_context():
     db.create_all()
 
-with open('model_rekomen_lagu.pkl', 'rb') as f:
+with open('music_recommender_system.pkl', 'rb') as f:
     model_data = pickle.load(f)
 
 kmeans = model_data['kmeans_model']
